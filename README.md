@@ -94,3 +94,41 @@ Mi IP: 46.6.159.65
     allow_anon_ssl=NO
     force_local_data_ssl=YES
     force_local_logins_ssl=YES
+
+## Paso 8: Habilitar los puertos de acceso
+
+    sudo ufw allow from any to any port 20,21,10000:10100 proto tcp
+
+![Puertos](https://github.com/jousemarquez/VSFTPD-Server/blob/master/Screenshots/04.png?raw=true)<br>
+
+## Paso 9: Añadir nuevo usuario
+
+    sudo adduser [USER]
+
+- Solicitará información para crear el usuario como contraseña, nombre, teléfono, entre otros. Solo es obligatoria la contraseña como es obvio.
+
+![Puertos](https://github.com/jousemarquez/VSFTPD-Server/blob/master/Screenshots/05.png?raw=true)<br>
+
+## Paso 10: Crear carpeta root para el usuario creado
+
+    sudo mkdir /home/[USER]/ftp
+
+![Mkdir](https://github.com/jousemarquez/VSFTPD-Server/blob/master/Screenshots/06.png?raw=true)<br>
+
+## Paso 11: Asignar privilegios a carpeta
+
+    sudo chown nobody:nogroup /home/[USER]/ftp
+
+![Mkdir](https://github.com/jousemarquez/VSFTPD-Server/blob/master/Screenshots/07.png?raw=true)<br>
+
+## Paso 12: Creando carpeta Upload en el usuario
+
+    sudo mkdir /home/[USER]/ftp/upload
+
+![Mkdir](https://github.com/jousemarquez/VSFTPD-Server/blob/master/Screenshots/08.png?raw=true)<br>
+
+## Paso 12: Dando privilegios al usuario a la carpeta
+
+    sudo chown [USER]:[USER] /home/[USER]/ftp/upload
+
+![Mkdir](https://github.com/jousemarquez/VSFTPD-Server/blob/master/Screenshots/09.png?raw=true)<br>
