@@ -134,3 +134,19 @@ Mi IP: 46.6.159.65
     sudo chown [USER]:[USER] /home/[USER]/ftp/upload
 
 ![Mkdir](https://github.com/jousemarquez/VSFTPD-Server/blob/master/Screenshots/09.png?raw=true)<br>
+
+# EXTRA:
+
+### Como limitar los bytes de envío de un usuario
+
+- Lanzar:
+
+  sudo nano /usr/vsftpd.conf
+
+- Establecer la cuota de subida en bytes (en este ejemplo, 1 MB)
+
+  upload_max_rate=1024000
+
+- Reiniciar el servicio para aplicar los cambios:
+
+  sudo systemctl restart vsftpd
