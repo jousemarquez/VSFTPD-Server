@@ -50,13 +50,13 @@ Guarda y cierra el editor.
 
 ## Paso 4: Iniciar VSFTPD
 
-    sudo brew services start vsftpd
+    sudo services start vsftpd
 
 ![Launch](https://github.com/jousemarquez/VSFTPD-Server/blob/master/Screenshots/02.png?raw=true)<br>
 
 ## Paso 5: Comprobación del Estado del Servicio
 
-    sudo brew services list
+    sudo services list
 
   - Nota: hay que asegurarse que vsftpd esté en estado started.
 
