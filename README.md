@@ -74,11 +74,11 @@ Mi IP: 46.6.159.65
 
 ## Comandos Adicionales para Configuración Avanzada:
 
-    sudo chown nobody:nogroup /home/username/ftp
-    sudo chmod a-w /home/username/ftp
-    sudo mkdir /home/username/ftp/upload
-    sudo chown user:user /home/user/ftp/upload
-    echo "My FTP Server" | sudo tee /home/user/ftp/upload/demo.txt
+    sudo chown nobody:nogroup /home/jouse/ftp
+    sudo chmod a-w /home/jouse/ftp
+    sudo mkdir /home/jouse/ftp/upload
+    sudo chown user:user /home/jouse/ftp/upload
+    echo "My FTP Server" | sudo tee /home/jouse/ftp/upload/demo.txt
 
     user_sub_token=$USER
     local_root=/home/$USER/ftp
@@ -94,6 +94,8 @@ Mi IP: 46.6.159.65
     allow_anon_ssl=NO
     force_local_data_ssl=YES
     force_local_logins_ssl=YES
+
+![Key](https://github.com/jousemarquez/VSFTPD-Server/blob/master/Screenshots/key.png?raw=true)<br>
 
 ## Paso 8: Habilitar los puertos de acceso
 
