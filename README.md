@@ -24,7 +24,7 @@ Nota: para poder arrancar esta práctica, siga los pasos de instalación de una 
 
 Editar el archivo de configuración:
 
-    sudo nano /usr/local/etc/vsftpd.conf
+    sudo nano /etc/vsftpd.conf
 
 - Nota: asegurarse de tener configuraciones como estas:
 
