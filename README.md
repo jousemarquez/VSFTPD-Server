@@ -140,13 +140,11 @@ Mi IP: 46.6.159.65
 ### Como limitar los bytes de envío de un usuario
 
 - Lanzar:
-
-  sudo nano /usr/vsftpd.conf
-
+    ```
+    sudo nano /usr/vsftpd.conf
 - Establecer la cuota de subida en bytes (en este ejemplo, 1 MB)
-
-  upload_max_rate=1024000
-
+    ```
+    upload_max_rate=1024000
 - Reiniciar el servicio para aplicar los cambios:
-
-  sudo systemctl restart vsftpd
+    ```
+    sudo systemctl restart vsftpd
